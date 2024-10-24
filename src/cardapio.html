@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/pich.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/car.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/0cf6585b12.js" crossorigin="anonymous"></script>
+    <title>Los Pichulas - Cardápio</title>
+</head>
+
+<body>
+    <header>
+        <h1>LOS PICHULAS</h1>
+        <ul>
+            <i id="seta" class="fas fa-arrow-left" onclick="voltar()"></i>
+            <i id="verCarrinho" onclick="mostrarCarrinho()" class="fas fa-shopping-cart"></i>
+        </ul>
+    </header>
+
+    <div class="container">
+        <!-- Seção de Pizzas -->
+        <section id="pizzas"> 
+            <h2 class="h2">Pizzas</h2>
+            <div class="carousel-container">
+                <button class="carousel-arrow left" onclick="moveLeft()">&#8592;</button>
+                <div class="produtos-container">
+                    <div class="card">
+                        <img src="https://www.cnnbrasil.com.br/viagemegastronomia/wp-content/uploads/sites/5/2019/04/A-tal-da-Pizza-1.jpg?w=1200&h=1200&crop=1" alt="Pizza de calabresa">
+                        <h3>Pizza de calabresa</h3>
+                        <p>Preço: R$ 49.00</p>
+                        <button onclick="adicionar('Pizza calabresa', 49)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="card">
+                        <img src="https://anamariabrogui.com.br/assets/uploads/receitas/fotos/usuario-1932-5a1b7911dfda6e3c351c30de564da267.jpg" alt="Pizza de mussarela">
+                        <h3>Pizza de mussarela</h3>
+                        <p>Preço: R$ 52.00</p>
+                        <button onclick="adicionar('Pizza mussarela', 52)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="card">
+                        <img src="https://m.psecn.photoshelter.com/img-get/I0000YPPJ07x0b6A/s/1200/I0000YPPJ07x0b6A.jpg" alt="Pizza portuguesa">
+                        <h3>Pizza portuguesa</h3>
+                        <p>Preço: R$ 50.00</p>
+                        <button onclick="adicionar('Pizza portuguesa', 50)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="card">
+                        <img src="https://anamariabrogui.com.br/assets/uploads/receitas/fotos/usuario-1932-5a1b7911dfda6e3c351c30de564da267.jpg" alt="Pizza de mussarela">
+                        <h3>Pizza de mussarela</h3>
+                        <p>Preço: R$ 52.00</p>
+                        <button onclick="adicionar('Pizza mussarela', 52)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="card">
+                        <img src="https://anamariabrogui.com.br/assets/uploads/receitas/fotos/usuario-1932-5a1b7911dfda6e3c351c30de564da267.jpg" alt="Pizza de mussarela">
+                        <h3>Pizza de mussarela</h3>
+                        <p>Preço: R$ 52.00</p>
+                        <button onclick="adicionar('Pizza mussarela', 52)">Adicionar ao Carrinho</button>
+                    </div>
+                    <!-- Mais pizzas aqui -->
+                </div>
+                <button class="carousel-arrow right" onclick="moveRight()">&#8594;</button>
+            </div>
+        </section>
+
+        <section id="lanches"> 
+            <h2 class="h2">Lanches</h2>
+            <div class="carousel-container">
+                <button class="carousel-arrow left" onclick="moveLeft2()">&#8592;</button>
+                <div class="produtos-container2">
+                    <div class="card">
+                        <img src="https://master.restaurantemadero.com.br/assets/site/images/MDR_Cheeseburger-2.jpg" alt="Hamburguer">
+                        <h3>Hambúrguer</h3>
+                        <p>Preço: R$ 25.00</p>
+                        <button onclick="adicionar('Hambúrguer', 25)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="card">
+                        <img src="https://t3.ftcdn.net/jpg/09/59/47/60/360_F_959476062_VOQM4URe3qKvpAbmUDWM7Nh9tuXem7cN.jpg" alt="Cheeseburger">
+                        <h3>Cheeseburger</h3>
+                        <p>Preço: R$ 28.00</p>
+                        <button onclick="adicionar('Cheeseburger', 28)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="card">
+                        <img src="https://master.restaurantemadero.com.br/assets/site/images/MDR_Cheeseburger-2.jpg" alt="Hamburguer">
+                        <h3>Hambúrguer</h3>
+                        <p>Preço: R$ 25.00</p>
+                        <button onclick="adicionar('Hambúrguer', 25)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="card">
+                        <img src="https://t3.ftcdn.net/jpg/09/59/47/60/360_F_959476062_VOQM4URe3qKvpAbmUDWM7Nh9tuXem7cN.jpg" alt="Cheeseburger">
+                        <h3>Cheeseburger</h3>
+                        <p>Preço: R$ 28.00</p>
+                        <button onclick="adicionar('Cheeseburger', 28)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="card">
+                        <img src="https://master.restaurantemadero.com.br/assets/site/images/MDR_Cheeseburger-2.jpg" alt="Hamburguer">
+                        <h3>Hambúrguer</h3>
+                        <p>Preço: R$ 25.00</p>
+                        <button onclick="adicionar('Hambúrguer', 25)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="card">
+                        <img src="https://t3.ftcdn.net/jpg/09/59/47/60/360_F_959476062_VOQM4URe3qKvpAbmUDWM7Nh9tuXem7cN.jpg" alt="Cheeseburger">
+                        <h3>Cheeseburger</h3>
+                        <p>Preço: R$ 28.00</p>
+                        <button onclick="adicionar('Cheeseburger', 28)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <button class="carousel-arrow right" onclick="moveRight2()">&#8594;</button>
+            </div>
+        </section>
+
+        <section id="combos"> 
+            <h2 class="h2">Combos</h2>
+            <div class="carousel-container">
+                <button class="carousel-arrow left" onclick="moveLeft3()">&#8592;</button>
+                <div class="produtos-container3">
+                    <div class="card">
+                        <img src="https://www.designi.com.br/images/preview/12325032.jpg" alt="Combo Pizza">
+                        <h3>Combo Pizza + Refri</h3>
+                        <p>Preço: R$ 65.00</p>
+                        <button onclick="adicionar('Combo Pizza + Refri', 65)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="card">
+                        <img src="https://acdn.mitiendanube.com/stores/690/117/products/kit-lanche-preto-montado1-00be5f13af68efb59115866449530210-480-0.jpg" alt="Combo Lanche">
+                        <h3>Combo Lanche + Batata + Refri</h3>
+                        <p>Preço: R$ 40.00</p>
+                        <button onclick="adicionar('Combo Lanche + Batata + Refri', 40)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="card">
+                        <img src="https://www.designi.com.br/images/preview/12325032.jpg" alt="Combo Pizza">
+                        <h3>Combo Pizza + Refri</h3>
+                        <p>Preço: R$ 65.00</p>
+                        <button onclick="adicionar('Combo Pizza + Refri', 65)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="card">
+                        <img src="https://acdn.mitiendanube.com/stores/690/117/products/kit-lanche-preto-montado1-00be5f13af68efb59115866449530210-480-0.jpg" alt="Combo Lanche">
+                        <h3>Combo Lanche + Batata + Refri</h3>
+                        <p>Preço: R$ 40.00</p>
+                        <button onclick="adicionar('Combo Lanche + Batata + Refri', 40)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="card">
+                        <img src="https://www.designi.com.br/images/preview/12325032.jpg" alt="Combo Pizza">
+                        <h3>Combo Pizza + Refri</h3>
+                        <p>Preço: R$ 65.00</p>
+                        <button onclick="adicionar('Combo Pizza + Refri', 65)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="card">
+                        <img src="https://acdn.mitiendanube.com/stores/690/117/products/kit-lanche-preto-montado1-00be5f13af68efb59115866449530210-480-0.jpg" alt="Combo Lanche">
+                        <h3>Combo Lanche + Batata + Refri</h3>
+                        <p>Preço: R$ 40.00</p>
+                        <button onclick="adicionar('Combo Lanche + Batata + Refri', 40)">Adicionar ao Carrinho</button>
+                    </div>
+                <button class="carousel-arrow right" onclick="moveRight3()">&#8594;</button>
+            </div>
+        </section>
+
+        <section id="refrigerantes"> 
+            <h2 class="h2">Refrigerantes</h2>
+            <div class="carousel-container">
+                <button class="carousel-arrow left" onclick="moveLeft4()">&#8592;</button>
+                <div class="produtos-container4">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbIXoDm1svXRa5IL_HxANnu9peFGg06M9W_Q&s" alt="Coca-Cola">
+                        <h3>Coca-Cola 2L</h3>
+                        <p>Preço: R$ 8.00</p>
+                        <button onclick="adicionar('Coca-Cola 2L', 8)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="card">
+                        <img src="https://mercantilatacado.vtexassets.com/arquivos/ids/168876/653fe6a745b11bc8543d2939.jpg?v=638342834423800000" alt="Guaraná">
+                        <h3>Guaraná 2L</h3>
+                        <p>Preço: R$ 7.00</p>
+                        <button onclick="adicionar('Guaraná 2L', 7)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbIXoDm1svXRa5IL_HxANnu9peFGg06M9W_Q&s" alt="Coca-Cola">
+                        <h3>Coca-Cola 2L</h3>
+                        <p>Preço: R$ 8.00</p>
+                        <button onclick="adicionar('Coca-Cola 2L', 8)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="card">
+                        <img src="https://mercantilatacado.vtexassets.com/arquivos/ids/168876/653fe6a745b11bc8543d2939.jpg?v=638342834423800000" alt="Guaraná">
+                        <h3>Guaraná 2L</h3>
+                        <p>Preço: R$ 7.00</p>
+                        <button onclick="adicionar('Guaraná 2L', 7)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbIXoDm1svXRa5IL_HxANnu9peFGg06M9W_Q&s" alt="Coca-Cola">
+                        <h3>Coca-Cola 2L</h3>
+                        <p>Preço: R$ 8.00</p>
+                        <button onclick="adicionar('Coca-Cola 2L', 8)">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="card">
+                        <img src="https://mercantilatacado.vtexassets.com/arquivos/ids/168876/653fe6a745b11bc8543d2939.jpg?v=638342834423800000" alt="Guaraná">
+                        <h3>Guaraná 2L</h3>
+                        <p>Preço: R$ 7.00</p>
+                        <button onclick="adicionar('Guaraná 2L', 7)">Adicionar ao Carrinho</button>
+                    </div>
+                <button class="carousel-arrow right" onclick="moveRight4()">&#8594;</button>
+            </div>
+        </section>
+    
+    <footer>
+        <p>&copy; 2024 Los Pichulas. Todos os direitos reservados.</p>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="../js/car.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-size: larger;   
+    padding: 20px;
+    background: linear-gradient(to right, #8A0707, #D46A6A);
+    color: white;
+    gap: 40px;
+}
+
+.header i{
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.filiacao {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #FEECC8, #fefdc8);
+    height:88.3vh; 
+}
+
+.filiacao h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.filiacao-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    max-width: 400px;
+    width: 100%;
+    min-height: 400px; 
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.card img {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #777;
+    font-size: 1.1em;
+    margin-bottom: auto;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+}
+
+footer {
+    background-color: #8A0707;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}

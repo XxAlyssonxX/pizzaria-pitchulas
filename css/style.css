@@ -1,0 +1,76 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: linear-gradient(to right, #FEECC8, #fefdc8);
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .container {
+        margin-top: 20px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .h2 {
+        text-align: center;
+        background-color: #f8b400;
+        color: white;
+        padding: 10px 0;
+        margin-bottom: 20px;
+    }
+
+    .produtos-container {
+        display: flex;
+        justify-content: space-between;
+        overflow-x: hidden; /* Deixe oculto em vez de permitir rolagem */
+        gap: 10px; /* Espaçamento entre os cards */
+        padding: 10px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+
+    .produtos-container2 {
+        display: flex;
+        justify-content: space-between;
+        overflow-x: hidden; /* Deixe oculto em vez de permitir rolagem */
+        gap: 10px; /* Espaçamento entre os cards */
+        padding: 10px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .produtos-container3 {
+        display: flex;
+        justify-content: space-between;
+        overflow-x: hidden; /* Deixe oculto em vez de permitir rolagem */
+        gap: 10px; /* Espaçamento entre os cards */
+        padding: 10px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .produtos-container4 {
+        display: flex;
+        justify-content: space-between;
+        overflow-x: hidden; /* Deixe oculto em vez de permitir rolagem */
+        gap: 10px; /* Espaçamento entre os cards */
+        padding: 10px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+   
+
+   
+

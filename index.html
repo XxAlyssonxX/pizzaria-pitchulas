@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pich.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/0cf6585b12.js" crossorigin="anonymous"></script>
+    <title>Los Pichulas</title>
+</head>
+
+<body>
+    <header>
+        <h1>LOS PICHULAS</h1>
+        <ul>
+            <li><a href="src/cardapio.html">Cardapio</a></li>
+            <li><a href="src/afiliados.html">Afiliados</a></li>
+            <i id="verCarrinho" onclick="mostrarCarrinho()" class="fas fa-shopping-cart"></i>
+        </ul>
+    </header>
+
+    <section class="sect">
+        <h1 class="carousel-title">Nossas Pizzas</h1>
+
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="https://nox.com.br/wp-content/uploads/2023/05/sistema-para-pizzarias-scaled-1.webp" alt="Imagem 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cdn.folhape.com.br/img/c/1200/900/dn_arquivo/2023/07/creditos-shutterstock.jpg" alt="Imagem 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.infomoney.com.br/wp-content/uploads/2019/06/pizza-2.jpg?fit=900%2C646&quality=50&strip=all" alt="Imagem 3">
+                </div>
+            </div>
+
+            <button id="carousel-button" class="center-button" onclick="redirect()">Ver Cardápio</button>
+        </div>  
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Los Pichulas. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/carousel.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
